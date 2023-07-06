@@ -1,0 +1,35 @@
+.get-avatar {
+    display: flex;
+    margin: 30px 0;
+  }
+  
+  .get-avatar__label {
+    cursor: pointer;
+  display: inline-block;
+  line-height: 34px ;
+  font-size: 13px;
+  width: 160px;
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  border: none;
+
+  height: 43px;
+  background: linear-gradient(90deg, #8176af -1.57%, #c0b7e8 98.43%);
+  border-radius: 40px;
+  }
+  
+  .get-avatar__upload-field {
+    display: none;
+  }
+  
+  .get-avatar__preview {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ccc;
+    height: 50px;
+    margin-left: 15px;
+    width: 50px;
+  }
