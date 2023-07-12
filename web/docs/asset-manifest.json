@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "./static/css/main.2bf693da.css",
+    "main.js": "./static/js/main.2b4d9e39.js",
+    "static/media/vibes-logo.jpg": "./static/media/vibes-logo.a82e5d3080fd6cc6d384.jpg",
+    "static/media/home-bg.jpg": "./static/media/home-bg.45478564d89a6de794f9.jpg",
+    "static/media/main-bg.jpg": "./static/media/main-bg.5c555039425ca3555ce4.jpg",
+    "static/media/urkel.jpg": "./static/media/urkel.79c838341a02e7fb0f3d.jpg",
+    "static/media/cover_2.jpeg": "./static/media/cover_2.03988cf8c9fec5fe28d6.jpeg",
+    "index.html": "./index.html",
+    "main.2bf693da.css.map": "./static/css/main.2bf693da.css.map",
+    "main.2b4d9e39.js.map": "./static/js/main.2b4d9e39.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2bf693da.css",
+    "static/js/main.2b4d9e39.js"
+  ]
+}
