@@ -35,8 +35,8 @@ server.get("/api/allproject", async (req, res) => {
   const connect = await connectDB();
   const [result] = await connect.query(select);
   console.log(result);
-  connect.end();
   res.json(result);
+  connect.end();
 });
 
 // endpoint post
@@ -57,7 +57,7 @@ server.post("/api/add", async (req, res) => {
   let insertProject =
     "INSERT INTO project (name, description, slogan, repo, demo, technologies, image, fk_author) VALUES(?,?,?,?,?,?,?,?)";
 
-  const [resultProjet] = await connect.query(insertProject, [
+  const [resultProject] = await connect.query(insertProject, [
     body.name,
     body.desc,
     body.slogan,
@@ -67,6 +67,9 @@ server.post("/api/add", async (req, res) => {
     body.photo,
     idAuthor,
   ]);
-  connect.end();
-  res.json({});
+  console.log(resultProject);
+  res.json({
+    cardURL: `http://localhost:4000/project/${resultProject.insertId}`,
+  });
+  // connect.end();
 });
