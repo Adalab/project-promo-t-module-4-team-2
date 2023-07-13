@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import '../../styles/home.scss';
 import cover from "../../images/vibes-logo.jpg";
 import user from "../../images/urkel.jpg";
+
+
 function Home() {
   const archivedProjects = [
     {
