@@ -35,5 +35,38 @@ server.get("/api/allproject", async (req, res) => {
   const connect = await connectDB();
   const [result] = await connect.query(select);
   console.log(result);
+  connect.end();
   res.json(result);
+});
+
+// endpoint post
+server.post("/api/add", async (req, res) => {
+  const body = req.body;
+
+  let insertAuthor = "INSERT INTO author (author, job, photo) VALUES (?,?,?)";
+
+  const connect = await connectDB();
+  const [result] = await connect.query(insertAuthor, [
+    body.name,
+    body.job,
+    body.photo,
+  ]);
+
+  const idAuthor = result.insertId;
+
+  let insertProject =
+    "INSERT INTO project (name, description, slogan, repo, demo, technologies, image, fk_author) VALUES(?,?,?,?,?,?,?,?)";
+
+  const [resultProjet] = await connect.query(insertProject, [
+    body.name,
+    body.desc,
+    body.slogan,
+    body.repo,
+    body.demo,
+    body.technologies,
+    body.photo,
+    idAuthor,
+  ]);
+  connect.end();
+  res.json({});
 });

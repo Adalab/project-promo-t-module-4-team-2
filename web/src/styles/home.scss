@@ -1,8 +1,7 @@
 .home {
   margin: 0;
-
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
   background-image: url('../images/home-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,6 +35,27 @@
   }
 }
 
+.autor-project {
+    background-color: hotpink;
+    color: #3e3e3e;
+    justify-content: center;
+    height: 60%;
+    // transform: translateY(-100px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+   
+    // padding: 30px;
+    width: 45%;
+
+    // @media screen and (min-width: 768px) {
+    //   margin: 0;
+    //   padding: 10px;
+    //   transform: translateY(-200px);
+    //   max-width: 80%;
+    // }
+  }
+
 .team-name {
   text-shadow: 2px 2px 4px lightblue;
 }
@@ -46,4 +66,10 @@
 }
 .home__button--link:hover {
   color: #97d8df;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
