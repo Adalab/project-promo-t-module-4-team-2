@@ -5,13 +5,13 @@ import cover from "../../images/vibes-logo.jpg";
 import user from "../../images/urkel.jpg";
 
 function Home() {
-  const [archivedProjects, setArchivedProject] = useState([]);
+  const [archivedProjects, setArchivedProjects] = useState([]);
   useEffect(() => {
     fetch("http://localhost:4000/api/allproject")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        setArchivedProject(data);
+        setArchivedProjects(data);
       });
   }, []);
 

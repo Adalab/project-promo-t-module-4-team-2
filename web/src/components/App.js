@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { callToApi } from "../services/Api.js";
+import callToApi from "../services/Api.js";
 import ls from "../services/localStorage.js";
 import "../styles/App.scss";
 import cover2 from "../images/cover_2.jpeg";

@@ -26,7 +26,7 @@ async function connectDB() {
 //Escuchar servidor
 const PORT = 4000;
 server.listen(PORT, () => {
-  console.log("Se ha conectado al puerto " + PORT);
+  console.log("Se ha conectado al puerto http://localhost:" + PORT);
 });
 
 //Solicitud con endpoint

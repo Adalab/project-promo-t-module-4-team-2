@@ -21,4 +21,4 @@ const getAllCardsApi = () => {
     });
 };
 
-export default { callToApi, getAllCardsApi };
+export default callToApi;
