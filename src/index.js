@@ -23,6 +23,7 @@ async function connectDB() {
 }
 //Aquí falta el catch para los errores!!!
 
+connectDB()
 //Escuchar servidor
 const PORT = 4000;
 server.listen(PORT, () => {
