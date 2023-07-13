@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import callToApi from "../services/Api.js";
 import ls from "../services/localStorage.js";
 import "../styles/App.scss";
+import "../styles/home.scss";
 import cover2 from "../images/cover_2.jpeg";
 import logo from "../images/logo-adalab.png";
 import Footer from "../components/Footer/Footer.js";
@@ -12,7 +13,6 @@ import GetAvatar from "./GetAvatar/GetAvatar.js";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home.js";
 import Main from "./Main.js";
-import "../styles/App.scss";
 
 function App() {
   const [successMessage, setSuccessMessage] = useState(false);
