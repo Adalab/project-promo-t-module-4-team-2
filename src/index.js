@@ -21,7 +21,6 @@ async function connectDB() {
   console.log(`Conexión establecida ${connection.threadId}`);
   return connection;
 }
-//Aquí falta el catch para los errores!!!
 
 connectDB()
 //Escuchar servidor
@@ -70,7 +69,8 @@ server.post("/api/add", async (req, res) => {
   ]);
   console.log(resultProject);
   res.json({
-    succes:true, cardURL: `http://localhost:4000/project/${resultProject.insertId}`,
+    succes: true,
+    cardURL: `http://localhost:4000/project/${resultProject.insertId}`,
   });
-  // connect.end();
 });
+

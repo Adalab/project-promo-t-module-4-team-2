@@ -1,15 +1,12 @@
 import { useState, useEffect } from "react";
-import callToApi from "../services/Api.js";
+import { callToApi, getAllCardsApi } from "../services/Api.js";
 
-import getAllCardsApi from "../services/GetAllCardsApi.js";
 import ls from "../services/localStorage.js";
 import "../styles/App.scss";
 import cover2 from "../images/cover_2.jpeg";
 import logo from "../images/logo-adalab.png";
 import Footer from "../components/Footer/Footer.js";
-
 import Header from "../components/Header/Header.js";
-
 import GetAvatar from "./GetAvatar/GetAvatar.js";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home.js";
