@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../../styles/home.scss";
-import cover from "../../images/vibes-logo.jpg";
+// import cover from "../../images/vibes-logo.jpg";
 import user from "../../images/urkel.jpg";
+import dataApi from "../../services/Api";
 
 function Home() {
   const [archivedProjects, setArchivedProjects] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/api/allproject")
-      .then((response) => response.json())
+    dataApi
+      .getAllCardsApi()
+
       .then((data) => {
         console.log(data);
         setArchivedProjects(data);
@@ -17,7 +19,7 @@ function Home() {
 
   const renderList = () => {
     return archivedProjects.map((project) => (
-      <section className="autor-project">
+      <li key={project.id} className="autor-project">
         <section className="info-project">
           <p className="subtitle">{project.repo}</p>
           <hr className="line" />
@@ -36,7 +38,7 @@ function Home() {
           <p className="job">{project.job}</p>
           <p className="name">{project.autor}</p>
         </section>
-      </section>
+      </li>
     ));
   };
   return (
@@ -47,7 +49,7 @@ function Home() {
       <Link className="home__button--link" to="/main">
         <button className="home__button">Bienvenidxs</button>
       </Link>
-      <section className="card-list">{renderList()}</section>
+      <ul className="card-list">{renderList()}</ul>
     </div>
   );
 }

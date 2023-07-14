@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { callToApi, getAllCardsApi } from "../services/Api.js";
+import dataApi from "../services/Api.js";
 
 import ls from "../services/localStorage.js";
 import "../styles/App.scss";
@@ -70,7 +70,7 @@ function App() {
       setCreateCard("");
     }
 
-    callToApi(data).then((data) => {
+    dataApi.callToApi(data).then((data) => {
       if (data.success) {
         setSuccessMessage(true);
         setErrorMessage(false);

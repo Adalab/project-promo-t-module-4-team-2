@@ -12,9 +12,9 @@ server.use(express.json({ limit: "100mb" }));
 async function connectDB() {
   const connection = await mysql.createConnection({
     host: "sql.freedb.tech",
-    database: "freedb_project molones",
+    database: `freedb_project molones`,
     user: "freedb_Group2",
-    password: "nnDTSJ#mTwUg?7W",
+    password: `nnDTSJ#mTwUg?7W`,
   });
 
   await connection.connect();
@@ -22,7 +22,7 @@ async function connectDB() {
   return connection;
 }
 
-connectDB()
+connectDB();
 //Escuchar servidor
 const PORT = 4000;
 server.listen(PORT, () => {
@@ -31,19 +31,20 @@ server.listen(PORT, () => {
 
 //Solicitud con endpoint
 server.get("/api/allproject", async (req, res) => {
-  const select = "SELECT * FROM project";
+  const select =
+    "SELECT * FROM project, author WHERE project.fk_author = author.idautor";
   const connect = await connectDB();
   const [result] = await connect.query(select);
   console.log(result);
-  res.json(result);
   connect.end();
+  res.json(result);
 });
 
 // endpoint post
 server.post("/api/add", async (req, res) => {
   const body = req.body;
 
-  let insertAuthor = "INSERT INTO author (author, job, photo) VALUES (?,?,?)";
+  let insertAuthor = "INSERT INTO author (autor, job, photo) VALUES (?,?,?)";
 
   const connect = await connectDB();
   const [result] = await connect.query(insertAuthor, [
@@ -68,9 +69,9 @@ server.post("/api/add", async (req, res) => {
     idAuthor,
   ]);
   console.log(resultProject);
+  connect.end();
   res.json({
-    succes: true,
+    success: true,
     cardURL: `http://localhost:4000/project/${resultProject.insertId}`,
   });
 });
-
