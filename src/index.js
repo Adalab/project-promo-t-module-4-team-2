@@ -77,7 +77,7 @@ server.post("/api/add", async (req, res) => {
 server.get('/project/:idProject', async (req, res) => {
   const id = req.params.idProject;
   const query = 
-    'SELECT * FROM author INNER JOIN projects ON fk_author = idauthor WHERE idproject = ?';
+    'SELECT * FROM author INNER JOIN project ON fk_author = idautor WHERE idproject = ?';
   const connect = await connectDB();
   const [results] = await connect.query(query, id);
 
