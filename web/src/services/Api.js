@@ -11,7 +11,7 @@ const callToApi = (data) => {
       return data;
     });
 };
-
+/*
 const getAllCardsApi = () => {
   return fetch("http://localhost:4000/api/allproject")
     .then((response) => response.json())
@@ -19,6 +19,12 @@ const getAllCardsApi = () => {
       console.log(data);
       return data.results;
     });
+};
+*/
+const getAllCardsApi = async () => {
+  const fetch = await fetch("http://localhost:4000/api/allproject");
+  const dataJson = await fetch.json();
+  return dataJson;
 };
 
 export default { callToApi, getAllCardsApi };
