@@ -55,7 +55,7 @@ server.post("/api/add", async (req, res) => {
   const idAuthor = result.insertId;
 
   let insertProject =
-    "INSERT INTO project (name, description, slogan, repo, demo, technologies, image, fk_author) VALUES(?,?,?,?,?,?,?,?)";
+    "INSERT INTO project (name, descproject, slogan, repo, demo, technologies, image, fk_author) VALUES(?,?,?,?,?,?,?,?)";
 
   const [resultProject] = await connect.query(insertProject, [
     body.name,
