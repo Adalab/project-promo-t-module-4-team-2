@@ -43,7 +43,7 @@ server.get("/api/allproject", async (req, res) => {
 server.post("/api/add", async (req, res) => {
   const body = req.body;
 
-  let insertAuthor = "INSERT INTO author (author, job, photo) VALUES (?,?,?)";
+  let insertAuthor = "INSERT INTO author (autor, job, photo) VALUES (?,?,?)";
 
   const connect = await connectDB();
   const [result] = await connect.query(insertAuthor, [

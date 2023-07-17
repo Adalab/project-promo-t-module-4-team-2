@@ -11,7 +11,7 @@ image LONGTEXT NOT NULL
 );
 
 CREATE TABLE author(
-idautor INT NOT NULL,
+idautor INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 autor VARCHAR (45) NOT NULL,
 job VARCHAR(45),
 photo LONGTEXT NOT NULL
@@ -24,14 +24,14 @@ INSERT INTO project(name, slogan, repo, demo, technologies, descproject, image)
 VALUES('Awesome profile-cards', 'Awesome Cards', 'https://github.com/Awesome profile-cards', 'https://github.com/Awesome profile-cards', 'mobile phone', 'Aplicación web que nos permite crear una tarjeta de visita personalizada', 'ruta_imagen1.jpg');
 
 
-INSERT INTO author(idautor,autor, job, photo)
+INSERT INTO autor(idautor,autor, job, photo)
 VALUES(1, 'Mari Camen', 'Web DEveloper', 'ruta_maricarmen.jpg');
 
-INSERT INTO author(idautor, autor, job, photo)
+INSERT INTO autor(idautor, autor, job, photo)
 VALUES(2, 'Paquita', 'Web-Dev', 'https://www.beatsource.com/release/paquita-la-del-barrio/452045');
 
 alter table project add column fk_author int;
-alter table project add foreign key (fk_author ) references author (idauthor);
+alter table project add foreign key (fk_author ) references autor (idautor);
 describe project;
 
 update project set fk_author = 1 where idproject = 1;
@@ -39,5 +39,5 @@ select * from projects where name like "paquita";
 
 
 
-select name, descproject , author
-from author inner join project on fk_author = idauthor;
+select name, descproject , autor
+from autor inner join project on fk_author = idautor;

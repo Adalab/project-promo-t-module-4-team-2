@@ -1,5 +1,5 @@
 const callToApi = (data) => {
-  return fetch("https://dev.adalab.es/api/projectCard", {
+  return fetch("http://localhost:4000/api/add", {
     method: "POST",
     headers: {
       "content-type": "application/json",
