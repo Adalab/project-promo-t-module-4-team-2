@@ -8,6 +8,7 @@ const server = express();
 //Configurar servidor
 server.use(cors());
 server.use(express.json({ limit: "100mb" }));
+server.set('view engine', 'ejs');
 
 async function connectDB() {
   const connection = await mysql.createConnection({
@@ -71,15 +72,17 @@ server.post("/api/add", async (req, res) => {
   res.json({
     succes:true, cardURL: `http://localhost:4000/project/${resultProject.insertId}`,
   });
-  // connect.end();
+   connect.end();
 });
 
+//endpoint get
+//nos devuelve un array vacío aunque pongamos en la url /project y el id correspondiente
 server.get('/project/:idProject', async (req, res) => {
   const id = req.params.idProject;
   const query = 
     'SELECT * FROM author INNER JOIN project ON fk_author = idautor WHERE idproject = ?';
   const connect = await connectDB();
   const [results] = await connect.query(query, id);
-
+  console.log(results);
   res.render('detailProject', results[0]);
 });
