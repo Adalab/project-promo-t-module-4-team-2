@@ -1,14 +1,14 @@
 const express = require("express");
 const cors = require("cors");
 const mysql = require("mysql2/promise");
-const dotenv = require ("dotenv");
+const dotenv = require("dotenv");
 //Crear servidor
 const server = express();
 
 //Configurar servidor
 server.use(cors());
 server.use(express.json({ limit: "100mb" }));
-server.set('view engine', 'ejs');
+server.set("view engine", "ejs");
 dotenv.config();
 
 async function connectDB() {
@@ -71,21 +71,24 @@ server.post("/api/add", async (req, res) => {
   ]);
   console.log(resultProject);
   res.json({
-    succes:true, cardURL: `http://localhost:4000/project/${resultProject.insertId}`,
+    succes: true,
+    cardURL: `http://localhost:4000/project/${resultProject.insertId}`,
   });
-   connect.end();
+  connect.end();
 });
 
 //endpoint get
 //nos devuelve un array vacío aunque pongamos en la url /project y el id correspondiente
-server.get('/project/:idProject', async (req, res) => {
+server.get("/project/:idProject", async (req, res) => {
   const id = req.params.idProject;
-  const query = 
-    'SELECT * FROM author INNER JOIN project ON fk_author = idautor WHERE idproject = ?';
+  const query =
+    "SELECT * FROM author INNER JOIN project ON fk_author = idautor WHERE idproject = ?";
   const connect = await connectDB();
   const [result] = await connect.query(query, id);
   console.log(result);
-  res.render('detailProject', result[0]);
+  res.render("detailProject", result[0]);
 });
 
-server.use(express.static('./src/css_plantillas'));
+server.use(express.static("./src/public"));
+
+server.use(express.static("./src/css_plantillas"));
