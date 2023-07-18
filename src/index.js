@@ -88,4 +88,4 @@ server.get('/project/:idProject', async (req, res) => {
   res.render('detailProject', result[0]);
 });
 
-server.use(express.static('./src/css_plantillas'));
+server.use(express.static('./src/css_plantillas'));//hay q cambiar la ruta
