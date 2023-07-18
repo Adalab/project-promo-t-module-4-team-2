@@ -32,7 +32,7 @@ server.listen(PORT, () => {
 
 //Solicitud con endpoint
 server.get("/api/allproject", async (req, res) => {
-  const select = "SELECT * FROM project";
+  const select = "SELECT * FROM project JOIN author ON (fk_author = idautor);";
   const connect = await connectDB();
   const [result] = await connect.query(select);
   console.log(result);
@@ -65,7 +65,7 @@ server.post("/api/add", async (req, res) => {
     body.repo,
     body.demo,
     body.technologies,
-    body.photo,
+    body.image,
     idAuthor,
   ]);
   console.log(resultProject);
@@ -82,7 +82,9 @@ server.get('/project/:idProject', async (req, res) => {
   const query = 
     'SELECT * FROM author INNER JOIN project ON fk_author = idautor WHERE idproject = ?';
   const connect = await connectDB();
-  const [results] = await connect.query(query, id);
-  console.log(results);
-  res.render('detailProject', results[0]);
+  const [result] = await connect.query(query, id);
+  console.log(result);
+  res.render('detailProject', result[0]);
 });
+
+server.use(express.static('./src/css_plantillas'));

@@ -14,7 +14,7 @@ function Home() {
         setArchivedProjects(data);
       });
   }, []);
-
+  console.log(archivedProjects);
   const renderList = () => {
     return archivedProjects.map((project) => (
       <section className="autor-project">
