@@ -1,11 +1,13 @@
 import cover from "../../images/vibes-logo.jpg";
+import computer from "../../images/computer_90s.jpeg";
+import computer2 from "../../images/computer90s.jpg";
 import user from "../../images/urkel.jpg";
 import "../../styles/App.scss";
 
 const Preview = ({ data }) => {
   return (
     <section className="preview">
-      <img className="image" src={data.image || cover} alt="" />
+      <img className="image" src={data.image || computer2} alt="" />
 
       <section className="autor">
         <section className="info-project">
@@ -15,12 +17,11 @@ const Preview = ({ data }) => {
           <h2 className="title">{data.name || "Todo sobre Laura Winslow"}</h2>
           <p className="slogan">{data.slogan || "¿He sido yo?"}</p>
           <p className="desc">{data.desc || "Proyecto sobre la bella Laura"}</p>
-          <section className="technologies">
+          
             <p className="text">
-              {data.technologies || "56k de cobre vía módem"}
-            </p>
+              {data.technologies || "56k de cobre vía módem"}</p>
             <p className="text">{data.demo || "Visual Basic"}</p>
-          </section>
+          
         </section>
 
         <section className="info-autor">
