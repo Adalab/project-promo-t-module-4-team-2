@@ -26,9 +26,10 @@ async function connectDB() {
 //Aquí falta el catch para los errores!!!
 
 //Escuchar servidor
-const PORT = 4000;
-server.listen(PORT, () => {
-  console.log("Se ha conectado al puerto http://localhost:" + PORT);
+ const serverPort = process.env.PORT || 4000
+//const PORT = 4000;
+server.listen(serverPort, () => {
+  console.log("Se ha conectado al puerto http://localhost:" + serverPort);
 });
 
 //Solicitud con endpoint
