@@ -1,5 +1,5 @@
 const callToApi = (data) => {
-  return fetch("https://dev.adalab.es/api/projectCard", {
+  return fetch("http://localhost:4000/api/add", {
     method: "POST",
     headers: {
       "content-type": "application/json",
@@ -12,13 +12,4 @@ const callToApi = (data) => {
     });
 };
 
-const getAllCardsApi = () => {
-  return fetch("http://localhost:4000/api/allproject")
-    .then((response) => response.json())
-    .then((data) => {
-      console.log(data);
-      return data.results;
-    });
-};
-
-export default { callToApi, getAllCardsApi };
+export default callToApi;

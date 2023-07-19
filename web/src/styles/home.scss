@@ -1,8 +1,16 @@
-.home {
-  margin: 0;
+.welcome-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fd5aba;
+  
+}
 
-  width: 100vw;
-  height: 100vh;
+.home {
+  // margin: 0;
+  // width: 100vw;
+  // height: 100vh;
   background-image: url('../images/home-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,6 +25,7 @@
     font-size: 1.5rem;
     padding-bottom: 10px;
     text-align: center;
+    
   }
   &__text {
     text-align: center;
@@ -33,11 +42,33 @@
     color: #fd5aba;
     font-size: 1.2rem;
     cursor: pointer;
+    margin-top: 10px;
   }
 }
 
+
+
+.autor-project {
+    background-color: hotpink;
+    border: 2px solid black;
+    color: #3e3e3e;
+    justify-content: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+
+    @media screen and (min-width: 768px) {
+      max-width: 40%;
+    }
+  }
+
 .team-name {
   text-shadow: 2px 2px 4px lightblue;
+}
+
+.home__button {
+  align-self: center;
 }
 
 .home__button:hover {
@@ -47,3 +78,27 @@
 .home__button--link:hover {
   color: #97d8df;
 }
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.image {
+  width: 150px;
+  height: 150px;;
+  padding: 10px;
+}
+
+.info-project {
+  width: 50%;
+  padding: 10px;
+  @media screen and (min-width: 768px) {
+    text-align: center;
+    padding: 20px;
+  }
+}
+

@@ -29,6 +29,7 @@
 
 .main {
   display: flex;
+  min-height: 95vh;
   flex-direction:column-reverse;
   align-items: center;
   padding-top: 50px;
@@ -122,6 +123,7 @@
   height: 43px;
   background:#0f6e67;
   border-radius: 40px;
+  cursor: pointer;
 }
 
 .main .preview {
@@ -294,3 +296,4 @@
 .mainLanding {
   background-color: pink;
 }
+
