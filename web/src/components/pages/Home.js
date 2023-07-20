@@ -32,7 +32,7 @@ function Home() {
         </section>
 
         <section className="info-autor">
-          <img className="image" src={project.photo || user} alt="" />
+          <img className="image-home" src={project.photo || user} alt="" />
           <p className="job">{project.job}</p>
           <p className="name">{project.autor}</p>
         </section>
