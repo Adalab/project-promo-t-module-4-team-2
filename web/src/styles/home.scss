@@ -20,6 +20,10 @@
   justify-content: center;
   align-items: center;
   gap: 40px;
+  @media screen and (min-width: 768px) {
+    background-size: cover;
+    background-position: center;
+  }
 
   &__title {
     font-size: 1.5rem;
@@ -55,7 +59,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    max-width: 300px;
+    max-width: 310px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
     color: #3e3e3e;
 
