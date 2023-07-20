@@ -1,4 +1,4 @@
-body {
+/*body {
     background: red;
 }
 
@@ -9,4 +9,148 @@ body {
     transform: translateY(-200px);
     max-width: 80%;
 }
+}*/
+
+main  {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: none;
+  justify-content: center;
+  align-items: center;
+
 }
+
+ 
+
+
+.preview {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    align-items: center;
+    /*width: 100vw;*/
+    max-width: 50%;
+    @media screen and (min-width:768px) {
+      width: 50%;
+    }
+  }
+  
+  
+  .image {
+    object-fit: cover;
+    width: 100%;
+   
+   
+   
+   
+  }
+  
+  .autor {
+    background-color: #9fd1cc;
+    color: #3e3e3e;
+    justify-content: center;
+    height: 50%;
+    width: 90%;
+    transform: translateY(-190px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 15px;
+    padding: 15px;
+   
+    @media screen and (min-width: 768px) {
+       
+        transform: translateY(-200px);
+        max-width: 80%;
+      }
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    text-align: center;
+    @media screen and (min-width: 1024px) {
+        font-size: 18px;
+      }
+  }
+
+.title {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        margin-top: 8px;
+      }
+  }
+  .slogan {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+      }
+  }
+
+.desc {
+    font-size: 12px;
+    margin-bottom: 10px;
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+      }
+  }
+  
+  .technologies {
+    background-color:#9fd1cc;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .text{
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 5px;
+    @media screen and (min-width: 1024px) {
+        font-size: 14px;
+      }
+  }
+  
+  .info-autor {
+   width: 40%;
+    text-align: center;
+  }
+  
+  .image2 {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border: none;
+    @media screen and (min-width: 768px) {
+      height: 100px;
+    }
+      @media screen and (min-width: 1024px) {
+        height: 170px;
+      }
+  }
+  
+ .job {
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    margin-top: 15px;
+    @media screen and (min-width: 1024px) {
+        margin-top: 3px;
+      }
+  }
+  
+  .name {
+    font-size: 16px;
+  }
+  
