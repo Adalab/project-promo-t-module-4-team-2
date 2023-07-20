@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import callToApi from "../services/Api.js";
+
+import getAllCardsApi from "../services/GetAllCardsApi.js";
 import ls from "../services/localStorage.js";
 import "../styles/App.scss";
 import "../styles/home.scss";

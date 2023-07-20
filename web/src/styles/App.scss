@@ -29,6 +29,7 @@
 
 .main {
   display: flex;
+  min-height: 95vh;
   flex-direction:column-reverse;
   align-items: center;
   padding-top: 50px;
@@ -98,14 +99,27 @@
   padding-left: 15px;
   padding-top: 5px;
   
+  
 }
+/*
+.main. input. text-desc {
+  height: 200px;
+ 
+}
+
+*/
+
+
 .main .input::placeholder,
 .textarea::placeholder {
   color: #ffffff;
+  
+  
 }
 
 .main .textarea {
   // height: 110px;
+  
 }
 
 .main .buttons-img {
@@ -122,6 +136,7 @@
   height: 43px;
   background:#0f6e67;
   border-radius: 40px;
+  cursor: pointer;
 }
 
 .main .preview {
@@ -294,3 +309,4 @@
 .mainLanding {
   background-color: pink;
 }
+
