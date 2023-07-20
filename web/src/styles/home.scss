@@ -1,10 +1,10 @@
 .welcome-container {
-  margin-top: 100px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fd5aba;
-  
+  // background-color: rgba(#fd5aba, 0.5);
+  padding: 5px;
 }
 
 .home {
@@ -13,8 +13,8 @@
   // height: 100vh;
   background-image: url('../images/home-bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  // background-size:auto;
+  background-position: top;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,18 +49,16 @@
 
 
 .autor-project {
-    background-color: hotpink;
+    background-color: #97d8df;
     border: 2px solid black;
-    color: #3e3e3e;
-    justify-content: center;
-    border-radius: 20px;
+    border-radius: 8px;
     display: flex;
+    justify-content: space-between;
     flex-direction: row-reverse;
-    width: 80%;
+    max-width: 300px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    color: #3e3e3e;
 
-    @media screen and (min-width: 768px) {
-      max-width: 40%;
-    }
   }
 
 .team-name {
@@ -88,17 +86,14 @@
 }
 
 .image {
-  width: 150px;
-  height: 150px;;
-  padding: 10px;
+  width: 100px;
+  height: 100px;;
+  padding: 5px;
 }
 
 .info-project {
-  width: 50%;
-  padding: 10px;
-  @media screen and (min-width: 768px) {
-    text-align: center;
-    padding: 20px;
-  }
+  max-width: 70%; 
+  
 }
+
 

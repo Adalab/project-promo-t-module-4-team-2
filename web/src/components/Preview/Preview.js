@@ -24,7 +24,7 @@ const Preview = ({ data }) => {
         </section>
 
         <section className="info-autor">
-          <img className="image" src={data.photo || user} alt="" />
+          <img className="image-autor" src={data.photo || user} alt="" />
           <p className="job">{data.job || "Inventor"}</p>
           <p className="name">{data.autor || "Steve Urkel"}</p>
         </section>

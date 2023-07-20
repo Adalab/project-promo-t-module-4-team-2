@@ -1,5 +1,9 @@
 .footer {
     text-align: center;
+    position: fixed;
+    background-color: #8b7cd0;
+    width: 100%;
+    bottom: 0;
     &__text {
         color: lavender;
         &--adalab {

@@ -9,17 +9,27 @@
   background-color: #8b7cd0;
   // height:y 150vh;
   // padding: 20px;
+  
 }
 
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  position: sticky;
+    top: 0;
+  // justify-content: space-around;
   color: lavender;
+  height: 50px;
   // display: none ;
   &__link {
     text-decoration: none;
   }
+}
+
+.img__logo {
+  width: 45px;
+  margin-top: 2.5px;
+  margin-left: 5px;
 }
 
 .header .text {
@@ -29,11 +39,13 @@
 
 .main {
   display: flex;
+  width: 100vw;
   min-height: 95vh;
   flex-direction:column-reverse;
   align-items: center;
   padding-top: 50px;
   background-image: url('../images/main-bg.jpg');
+  background-position: center;
   @media screen and (min-width: 768px){
     flex-direction: row;
     justify-content: center;
@@ -140,43 +152,49 @@
 }
 
 .main .preview {
-  padding: 20px;
+  width: 85%;
   display: flex;
   flex-direction: column;
-  gap: 150px;
   align-items: center;
-  // width: 500px;
+
+  // padding: 20px;
+  // gap: 150px;
+  
   @media screen and (min-width:768px) {
     width: 50%;
   }
 }
 
 .main .preview .image {
-  object-fit: cover;
-  max-width: 50%;
-  height: 80%;
-  border-radius: 10px;
+  object-fit:contain;
+  width: 300px;
+  height: 300px;
+  // max-width: 50%;
+  // height: 80%;
+  // border-radius: 10px;
  
 }
 
+.main .preview .image-autor {
+  width: 100px;
+    height: 100px;
+    ;
+    padding: 5px;
+    border-radius: 50%;
+}
+
 .main .preview .autor {
-  background-color: hotpink;
-  color: #3e3e3e;
-  justify-content: center;
-  height: 60%;
-  transform: translateY(-100px);
-  border-radius: 20px;
+  background-color: #97d8df;
+  border: 2px solid black;
+  border-radius: 8px;
   display: flex;
+  justify-content: space-between;
   flex-direction: row-reverse;
-  gap: 40px;
-  padding: 30px;
-  width: 100%;
-  @media screen and (min-width: 768px) {
-      margin: 0;
-      padding: 10px;
-      transform: translateY(-200px);
-      max-width: 80%;
-    }
+  max-width: 300px;
+  height: 200px;
+  margin-bottom: 150px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  color: #3e3e3e;
 }
 
 .info-autor {
@@ -184,11 +202,7 @@
   text-align: center;
 }
 
-.info-autor .image {
-  border-radius: 50%;
-  // width: 80px;
-  // height: 110px;
-}
+
 
 .info-autor .job {
   font-weight: bold;
@@ -201,7 +215,7 @@
 }
 
 .info-project {
-  //width: 60%;
+  max-width: 70%;
 }
 
 .info-project .subtitle {
@@ -287,11 +301,6 @@
   color: rgb(188, 64, 237);
   font-size: 10px;
   margin-left: 20px;
-}
-
-.autor {
-  height: 100px;
-  font-size: 0.5rem;
 }
 
 .info-project {
