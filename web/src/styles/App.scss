@@ -97,9 +97,22 @@
   color: #ffffff;
   padding-left: 15px;
   padding-top: 5px;
+
+}
+#desc{
+  height: 100px;
   
   
 }
+
+/*
+.main .input. text-desc. desc-field{
+ height: 200px;
+ background-color: red;
+
+}
+*/
+
 
 .main .input::placeholder,
 .textarea::placeholder {

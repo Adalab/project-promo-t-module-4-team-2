@@ -29,7 +29,7 @@ const Form = ({
 
       <fieldset className="project">
         <input
-          className={`input ${errors.name ? "error" : ""}`}
+          className={`input ${errors.name ? 'error' : ''}`}
           type="text"
           placeholder="Nombre del proyecto"
           name="name"
@@ -41,7 +41,7 @@ const Form = ({
           <p className="error-message">* Este campo es obligatorio</p>
         )}
         <input
-          className={`input ${errors.slogan ? "error" : ""}`}
+          className={`input ${errors.slogan ? 'error' : ''}`}
           type="text"
           name="slogan"
           id="slogan"
@@ -53,7 +53,7 @@ const Form = ({
           <p className="error-message">* Este campo es obligatorio</p>
         )}
         <input
-          className={`input ${errors.repo ? "error" : ""}`}
+          className={`input ${errors.repo ? 'error' : ''}`}
           type="text"
           name="repo"
           id="repo"
@@ -65,7 +65,7 @@ const Form = ({
           <p className="error-message">* Este campo es obligatorio</p>
         )}
         <input
-          className={`input ${errors.demo ? "error" : ""}`}
+          className={`input ${errors.demo ? 'error' : ''}`}
           type="text"
           placeholder="Demo"
           name="demo"
@@ -77,7 +77,7 @@ const Form = ({
           <p className="error-message">* Este campo es obligatorio</p>
         )}
         <input
-          className={`input ${errors.technologies ? "error" : ""}`}
+          className={`input ${errors.technologies ? 'error' : ''}`}
           type="text"
           placeholder="Tecnologías"
           name="technologies"
@@ -89,9 +89,10 @@ const Form = ({
           <p className="error-message">* Este campo es obligatorio</p>
         )}
         <textarea
-          className={`input ${errors.desc ? "error" : ""}box-desc description-field`}
+          className={`input ${errors.desc ? 'error' : ''} text-desc`}
+
           type="text"
-          placeholder="Descripción"
+          placeholder="  Descripción"
           name="desc"
           value={data.desc}
           id="desc"
@@ -109,7 +110,7 @@ const Form = ({
 
       <fieldset className="autor">
         <input
-          className={`input ${errors.autor ? "error" : ""}`}
+          className={`input ${errors.autor ? 'error' : ''}`}
           type="text"
           placeholder="Nombre"
           name="autor"
@@ -121,7 +122,7 @@ const Form = ({
           <p className="error-message">* Este campo es obligatorio</p>
         )}
         <input
-          className={`input ${errors.job ? "error" : ""}`}
+          className={`input ${errors.job ? 'error' : ''}`}
           type="text"
           placeholder="Trabajo"
           name="job"
