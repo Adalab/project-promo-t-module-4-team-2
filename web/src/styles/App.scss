@@ -98,15 +98,27 @@
   padding-left: 15px;
   padding-top: 5px;
   
+  
 }
+
 .main .input::placeholder,
 .textarea::placeholder {
   color: #ffffff;
+
+ 
 }
 
 .main .textarea {
   // height: 110px;
 }
+
+.description-field{
+height: 200px;
+
+}
+  
+
+
 
 .main .buttons-img {
   text-align: center;

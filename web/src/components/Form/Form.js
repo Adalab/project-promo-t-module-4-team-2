@@ -89,7 +89,7 @@ const Form = ({
           <p className="error-message">* Este campo es obligatorio</p>
         )}
         <textarea
-          className={`input ${errors.desc ? "error" : ""}`}
+          className={`input ${errors.desc ? "error" : ""}box-desc description-field`}
           type="text"
           placeholder="Descripción"
           name="desc"
