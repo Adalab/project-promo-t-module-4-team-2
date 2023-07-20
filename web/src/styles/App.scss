@@ -99,14 +99,27 @@
   padding-left: 15px;
   padding-top: 5px;
   
+  
 }
+/*
+.main. input. text-desc {
+  height: 200px;
+ 
+}
+
+*/
+
+
 .main .input::placeholder,
 .textarea::placeholder {
   color: #ffffff;
+  
+  
 }
 
 .main .textarea {
   // height: 110px;
+  
 }
 
 .main .buttons-img {
