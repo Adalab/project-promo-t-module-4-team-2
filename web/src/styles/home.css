@@ -1,0 +1,99 @@
+.welcome-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fd5aba;
+}
+
+.home {
+  background-image: url("../images/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.home__title {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.home__text {
+  text-align: center;
+}
+.home__button {
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #97d8df;
+  border: 2px solid black;
+  text-decoration: none;
+  color: #fd5aba;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.autor-project {
+  background-color: hotpink;
+  border: 2px solid black;
+  color: #3e3e3e;
+  justify-content: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+}
+@media screen and (min-width: 768px) {
+  .autor-project {
+    max-width: 40%;
+  }
+}
+
+.team-name {
+  text-shadow: 2px 2px 4px lightblue;
+}
+
+.home__button {
+  align-self: center;
+}
+
+.home__button:hover {
+  background-color: #fd5aba;
+  color: #97d8df;
+}
+
+.home__button--link:hover {
+  color: #97d8df;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+}
+
+.info-project {
+  width: 50%;
+  padding: 10px;
+}
+@media screen and (min-width: 768px) {
+  .info-project {
+    text-align: center;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=home.css.map */

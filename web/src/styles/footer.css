@@ -1,0 +1,11 @@
+.footer {
+  text-align: center;
+}
+.footer__text {
+  color: lavender;
+}
+.footer__text--adalab {
+  text-decoration: none;
+  color: cyan;
+  font-weight: bold;
+}/*# sourceMappingURL=footer.css.map */
