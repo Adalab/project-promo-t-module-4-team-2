@@ -8,10 +8,32 @@
     <title>Document</title>
 </head>
 <body>
-    <main>
-        <h1 class="autor"><%= name %></h1>
-    </main>
-        <img src="<%= image %>" alt="" >
-    
+    <main> 
+        <section class="preview">
+            <img class="image" src="<%= image %>"  alt="" />
+      
+            <section class="autor">
+              <section class="info-project">
+                <p class="subtitle"><%= repo %></p>
+                <hr class="line" />
+      
+                <h2 class="title"><%= name %></h2>
+                <p class="slogan"><%= slogan %></p>
+                <p class="desc"><%= descproject %></p>
+                <section class="technologies">
+                  <p class="text"><%= technologies %></p>
+                  <p class="text"><%= demo  %></p>
+                </section>
+              </section>
+      
+              <section class="info-autor">
+                <img class="image2" src="<%= photo %>" alt="" />
+                <p class="job"><%= job  %></p>
+                <p class="name"><%= autor  %></p>
+              </section>
+            </section>
+          </section>
+        </main>
 </body>
 </html>
+

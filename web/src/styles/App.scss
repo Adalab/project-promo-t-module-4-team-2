@@ -29,6 +29,7 @@
 
 .main {
   display: flex;
+  min-height: 95vh;
   flex-direction:column-reverse;
   align-items: center;
   padding-top: 50px;
@@ -96,6 +97,7 @@
   height: 42.72px;
   color: #ffffff;
   padding-left: 15px;
+<<<<<<< HEAD
   padding-top: 5px;
 
 }
@@ -113,17 +115,28 @@
 }
 */
 
+=======
+  padding-top: 5px; 
+}
+
+#desc {
+  height: 100px;
+  border-radius: 20px;
+}
+>>>>>>> main
 
 .main .input::placeholder,
 .textarea::placeholder {
   color: #ffffff;
+<<<<<<< HEAD
 
  
+=======
+  
+  
+>>>>>>> main
 }
 
-.main .textarea {
-  // height: 110px;
-}
 
 .description-field{
 height: 200px;

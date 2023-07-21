@@ -89,8 +89,12 @@ const Form = ({
           <p className="error-message">* Este campo es obligatorio</p>
         )}
         <textarea
+<<<<<<< HEAD
           className={`input ${errors.desc ? 'error' : ''} text-desc`}
 
+=======
+          className={`input ${errors.desc ? "error" : ""} text-desc`}
+>>>>>>> main
           type="text"
           placeholder="  Descripción"
           name="desc"
@@ -101,6 +105,7 @@ const Form = ({
         {errors.desc && (
           <p className="error-message">* Este campo es obligatorio</p>
         )}
+        
       </fieldset>
 
       <section className="ask-info">
