@@ -3,17 +3,18 @@ import "../../styles/footer.scss";
 function Footer() {
   return (
     <footer className="footer">
-      <small className="footer__text">
-        &copy; The 90's developers 2023 ||{" "}
+      <p className="footer__text">
+        &copy; The 90's developers 2023 
+        </p>
         <a
-          href="https://https://adalab.es/"
+          href="https://adalab.es/"
           target="_blank"
           rel="noreferrer"
           className="footer__text--adalab"
         >
-          Adalab
+          Adalab - Promo Trótula
         </a>
-      </small>
+      
     </footer>
   );
 }
