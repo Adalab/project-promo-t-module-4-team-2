@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   background-color: #fd5aba;
-  
 }
 
 .home {
@@ -25,7 +24,6 @@
     font-size: 1.5rem;
     padding-bottom: 10px;
     text-align: center;
-    
   }
   &__text {
     text-align: center;
@@ -46,22 +44,20 @@
   }
 }
 
-
-
 .autor-project {
-    background-color: hotpink;
-    border: 2px solid black;
-    color: #3e3e3e;
-    justify-content: center;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    width: 80%;
-
-    @media screen and (min-width: 768px) {
-      max-width: 40%;
-    }
+  background-color: hotpink;
+  border: 2px solid black;
+  color: #3e3e3e;
+  justify-content: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  height: 250px;
+  @media screen and (min-width: 768px) {
+    max-width: 40%;
   }
+}
 
 .team-name {
   text-shadow: 2px 2px 4px lightblue;
@@ -88,9 +84,11 @@
 }
 
 .image {
-  width: 150px;
-  height: 150px;;
-  padding: 10px;
+  //width: 400px;
+  //height: 150px;
+  border-radius: 20px;
+  //padding: 10px;
+  border: 3px solid black;
 }
 
 .info-project {
@@ -98,7 +96,61 @@
   padding: 10px;
   @media screen and (min-width: 768px) {
     text-align: center;
-    padding: 20px;
+    //padding: 20px;
   }
 }
 
+.authorSection {
+  min-width: 250px;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: plum;
+  border-radius: 20px;
+  &__project {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    width: 60%;
+
+    &--subtitle {
+      font-size: 14px;
+    }
+
+    &--title {
+    }
+
+    &-slogan {
+    }
+
+    &--desc {
+    }
+    &--technologies {
+      background-color: #97d8df;
+      border-radius: 10px;
+      color: white;
+      padding: 4px;
+    }
+    &--text {
+      text-align: center;
+    }
+    &--name {
+      text-align: center;
+      width: 40%;
+    }
+    &--image {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 1px solid #427075;
+      margin: 20px;
+    }
+    &--job{
+      font-weight: 800;
+    }
+    &--jobName{
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+  }
+}

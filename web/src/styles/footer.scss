@@ -1,11 +1,23 @@
 .footer {
-    text-align: center;
+    height: 5vh;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   
     &__text {
         color: lavender;
+        font-size: 14px;
+        margin-left: 10px;
+
         &--adalab {
+           
             text-decoration: none;
-            color: cyan;
+            color: lavender;
             font-weight: bold;
+            font-size: 12px;
+            margin-right: 10px;
+
         }
     }
 }
