@@ -1,24 +1,22 @@
 .welcome-container {
-  margin-top: 100px;
+  margin-top: 250px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fd5aba;
+  // background-color: #fd5aba;
 }
 
 .home {
-  // margin: 0;
-  // width: 100vw;
-  // height: 100vh;
   background-image: url('../images/home-bg.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 40px;
+  @media screen and (min-width: 768px) {
+    background-size: cover;
+  }
 
   &__title {
     font-size: 1.5rem;
