@@ -1,5 +1,5 @@
 body {
-    background: red;
+    background: violet;
 }
 
 @media screen and (min-width: 768px) {
