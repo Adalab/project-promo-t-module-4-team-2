@@ -7,7 +7,7 @@ import "../../styles/App.scss";
 const Preview = ({ data }) => {
   return (
     <section className="preview">
-      <img className="image" src={data.image || computer2} alt="" />
+      <img className="photo-project" src={data.image || computer2} alt="" />
 
       <section className="autor">
         <section className="info-project">

@@ -5,9 +5,6 @@
   box-sizing: border-box;
 }
 
-body {
-}
-
 .main {
   min-height: 95vh;
   display: flex;
@@ -34,7 +31,7 @@ body {
   }
 }
 
-.image {
+.image-detail {
   object-fit: cover;
   width: 260px;
   height: 260px;
