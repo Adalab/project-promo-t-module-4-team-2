@@ -1,6 +1,5 @@
 body {
-    background-color:palevioletred;
-    
+  /* background-color: palevioletred; */
 }
 /*
 @media screen and (min-width: 768px) {
@@ -14,7 +13,7 @@ body {
 * {
   font-family: "Montserrat", sans-serif;
 }
-main  {
+.main {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -24,136 +23,145 @@ main  {
 }
 
 .preview {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 150px;
-    align-items: center;
-    /*width: 100vw;*/
-    max-width: 50%;
-    @media screen and (min-width:768px) {
-      width: 50%;
-    }
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+  align-items: center;
+
+  width: 100vw;
+  max-width: 50%;
+  @media screen and (min-width: 768px) {
+    width: 50%;
   }
-  
-  
-  .image {
-    object-fit: cover;
-    width: 100%;
-   border-radius: 20px;
-   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-   border: cadetblue solid 2px;
-   
+}
+
+.image {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: cadetblue solid 2px;
+  @media screen and (min-width: 768px) {
+    width: 600px;
   }
-  
-  .autor {
-    background-color: #9fd1cc;
-    color: #3e3e3e;
-    border: cadetblue solid 2px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    justify-content: center;
-    height: 50%;
-    width: 90%;
-    transform: translateY(-190px);
-    border-radius: 20px;
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 15px;
-    padding: 15px;
-   
-    @media screen and (min-width: 768px) {
-       
-        transform: translateY(-200px);
-        max-width: 80%;
-      }
+}
+
+.autor {
+  background-color: #9fd1cc;
+  color: #3e3e3e;
+  border: cadetblue solid 2px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  justify-content: space-around;
+  min-height: 20vh;
+  width: 70vw;
+  transform: translateY(-190px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 15px;
+  padding: 15px;
+
+  @media screen and (min-width: 768px) {
+    /* transform: translateY(-200px);*/
+    width: 500px;
   }
-  
-  .subtitle {
-    font-size: 14px;
-    text-align: center;
-    @media screen and (min-width: 1024px) {
-        font-size: 18px;
-      }
+}
+
+.subtitle {
+  font-size: 9px;
+  margin: 0;
+  text-align: center;
+  @media screen and (min-width: 1024px) {
+    font-size: 18px;
   }
+}
 
 .title {
-    font-size: 14px;
-    color: black;
-    text-align: center;
-    margin-bottom: 10px;
-    @media screen and (min-width: 1024px) {
-        font-size: 16px;
-        margin-top: 8px;
-      }
+  font-size: 9px;
+  color: black;
+  text-align: center;
+  /* margin-bottom: 10px; */
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    margin-top: 8px;
   }
-  .slogan {
-    font-size: 14px;
-    margin-bottom: 10px;
-    text-align: center;
-    @media screen and (min-width: 1024px) {
-        font-size: 16px;
-      }
-  }
-
-.desc {
-    font-size: 12px;
-    margin-bottom: 10px;
-    @media screen and (min-width: 1024px) {
-        font-size: 16px;
-      }
-  }
-  
-  .technologies {
-    background-color:cadetblue;
-    border-radius: 20px;
-    font-size: 14px;
-    padding: 10px;
-    max-width: 90%;
-    text-align: center;
-  }
-
-
-  .text{
-    color: white;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-align: center;
-    padding-top: 5px;
-    @media screen and (min-width: 1024px) {
-        font-size: 14px;
-      }
-  }
-  
-  .info-autor {
-   width: 40%;
-    text-align: center;
-  }
-  
-  .image2 {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    
-    border: cadetblue solid 2px;
-    @media screen and (min-width: 768px) {
-      height: 100px;
-    }
-      @media screen and (min-width: 1024px) {
-        height: 170px;
-      }
-  }
-  
- .job {
-    font-weight: bold;
-    color: black;
-    font-size: 14px;
-    margin-top: 15px;
-    @media screen and (min-width: 1024px) {
-        margin-top: 3px;
-      }
-  }
-  
-  .name {
+}
+.slogan {
+  font-size: 9px;
+  /* margin-bottom: 10px; */
+  text-align: center;
+  @media screen and (min-width: 1024px) {
     font-size: 16px;
   }
-  
+}
+
+.desc {
+  font-size: 9px;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+.technologies {
+  background-color: cadetblue;
+  border-radius: 20px;
+  font-size: 9px;
+  padding: 10px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.text {
+  color: white;
+  font-size: 9px;
+  /* letter-spacing: 1px; */
+  text-align: center;
+  /* padding-top: 5px; */
+  @media screen and (min-width: 1024px) {
+    font-size: 14px;
+  }
+}
+
+.info-project {
+  width: 50%;
+  text-align: center;
+}
+
+.info-autor {
+  width: 50%;
+  text-align: center;
+  align-self: center;
+}
+
+.image2 {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+
+  border: cadetblue solid 2px;
+  @media screen and (min-width: 768px) {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+.job {
+  font-weight: bold;
+  color: black;
+  font-size: 9px;
+  /* margin-top: 15px; */
+  padding: 0;
+  margin: 0;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.name {
+  font-size: 9px;
+}
