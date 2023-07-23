@@ -101,7 +101,7 @@
 }
 
 .authorSection {
-  max-width: 460px;
+  min-width: 250px;
   display: flex;
   flex-direction: row-reverse;
   background-color: plum;
@@ -111,6 +111,7 @@
     flex-direction: column;
     gap: 10px;
     margin: 20px;
+    width: 60%;
 
     &--subtitle {
       font-size: 14px;
@@ -135,6 +136,7 @@
     }
     &--name {
       text-align: center;
+      width: 40%;
     }
     &--image {
       width: 120px;
