@@ -1,29 +1,27 @@
-body {
-  /* background-color: palevioletred; */
-}
-/*
-@media screen and (min-width: 768px) {
-.preview .autor {
-    margin: 0;
-    padding: 10px;
-    transform: translateY(-200px);
-    max-width: 80%;
-}
-}*/
 * {
   font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+}
+
 .main {
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   gap: 10px;
   border: none;
   justify-content: center;
   align-items: center;
+  background-image: url("../public/static/media/main-bg.jpg");
+  background-size: cover;
 }
 
 .preview {
-  padding: 20px;
+  padding: 50px;
   display: flex;
   flex-direction: column;
   gap: 150px;
