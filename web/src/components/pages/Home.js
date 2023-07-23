@@ -46,7 +46,7 @@ function Home() {
         <h1 className="home__title">¿Te apetece conocer nuestros proyectos?</h1>
         <p className="home__text">¡Estás en la web correcta!</p>
         <Link className="home__button--link" to="/main">
-          <button className="home__button">Bienvenidxs</button>
+          <button className="home__button">Crea tu proyecto</button>
         </Link>
       </section>
       <section className="card-list">{renderList()}</section>
