@@ -4,7 +4,12 @@
   flex-direction: column;
   align-items: center;
   // background-color: #fd5aba;
+  @media screen and (min-width: 768px) {
+    margin-top: 100px;
+    color: white;
+  }
 }
+
 
 .home {
   background-image: url('../images/home-bg.jpg');
@@ -16,7 +21,9 @@
   gap: 40px;
   @media screen and (min-width: 768px) {
     background-size: cover;
+    background-position: center;
   }
+
 
   &__title {
     font-size: 1.5rem;
@@ -40,6 +47,10 @@
     cursor: pointer;
     margin-top: 10px;
   }
+}
+
+.home__title.team-name {
+  text-shadow: 8px 8px 10px rgba(20, 73, 67, 0.7);
 }
 
 .autor-project {
@@ -82,59 +93,145 @@
 }
 
 .image {
+    object-fit: cover;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+    
+      border: cadetblue solid 2px;
+    
+      @media screen and (min-width: 768px) {
+        width: 120px;
+        height: 120px;
+      }
   //width: 400px;
   //height: 150px;
-  border-radius: 20px;
+  // border-radius: 20px;
   //padding: 10px;
-  border: 3px solid black;
+  // border: 3px solid black;
 }
 
 .info-project {
-  width: 50%;
-  padding: 10px;
-  @media screen and (min-width: 768px) {
-    text-align: center;
-    //padding: 20px;
-  }
+    width: 50%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  // width: 50%;
+  // padding: 10px;
+  // @media screen and (min-width: 768px) {
+  //   text-align: center;
+  //   //padding: 20px;
+  // }
 }
 
 .authorSection {
-  min-width: 250px;
+  background-color: #9fd1cc;
+  color: #3e3e3e;
+  border: cadetblue solid 2px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  justify-content: space-around;
+  min-height: 20vh;
+  width: 300px;
+  // transform: translateY(-190px);
+  border-radius: 20px;
   display: flex;
   flex-direction: row-reverse;
-  background-color: plum;
-  border-radius: 20px;
+  gap: 15px;
+  padding: 15px;
+  
+    @media screen and (min-width: 768px) {
+      /* transform: translateY(-200px);*/
+      width: 500px;}
+  // min-width: 250px;
+  // display: flex;
+  // flex-direction: row-reverse;
+  // background-color: plum;
+  // border-radius: 20px;
   &__project {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 20px;
-    width: 60%;
+      width: 60%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
 
     &--subtitle {
-      font-size: 14px;
+        font-size: 9px;
+          margin: 0;
+          text-align: center;
+        
+          @media screen and (min-width: 768px) {
+            font-size: 18px;
+          }
+      // font-size: 14px;
     }
 
     &--title {
+      font-size: 9px;
+        color: black;
+        text-align: center;
+      
+        /* margin-bottom: 10px; */
+        @media screen and (min-width: 1024px) {
+          font-size: 16px;
+          margin-top: 8px;
+        }
     }
 
     &-slogan {
+        font-size: 9px;
+          /* margin-bottom: 10px; */
+          text-align: center;
+        
+          @media screen and (min-width: 1024px) {
+            font-size: 16px;
+          }
     }
 
     &--desc {
+        font-size: 9px;
+          padding: 10px;
+        
+          /* margin-bottom: 10px; */
+          @media screen and (min-width: 1024px) {
+            font-size: 16px;
+          }
     }
     &--technologies {
-      background-color: #97d8df;
-      border-radius: 10px;
-      color: white;
-      padding: 4px;
+      background-color: cadetblue;
+        border-radius: 20px;
+        font-size: 9px;
+        padding: 10px;
+        // max-width: 90%;
+        text-align: center;
+      // background-color: #97d8df;
+      // border-radius: 10px;
+      // color: white;
+      // padding: 4px;
     }
     &--text {
-      text-align: center;
+      color: white;
+        font-size: 9px;
+        /* letter-spacing: 1px; */
+        text-align: center;
+      
+        /* padding-top: 5px; */
+        @media screen and (min-width: 1024px) {
+          font-size: 14px;
+        }
+      // text-align: center;
     }
     &--name {
-      text-align: center;
-      width: 40%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+          // align-self: center;
+      // text-align: center;
+      // width: 40%;
     }
     &--image {
       width: 120px;

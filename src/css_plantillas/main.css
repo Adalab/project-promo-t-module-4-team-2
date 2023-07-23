@@ -36,8 +36,8 @@ body {
 
 .image {
   object-fit: cover;
-  width: 300px;
-  height: 300px;
+  width: 260px;
+  height: 260px;
   border-radius: 20px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   border: cadetblue solid 2px;
@@ -71,7 +71,7 @@ body {
   font-size: 9px;
   margin: 0;
   text-align: center;
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 768px) {
     font-size: 18px;
   }
 }
@@ -127,6 +127,9 @@ body {
 .info-project {
   width: 50%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .info-autor {
