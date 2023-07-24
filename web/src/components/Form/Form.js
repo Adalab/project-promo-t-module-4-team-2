@@ -1,4 +1,5 @@
 import GetAvatar from "../GetAvatar/GetAvatar";
+import Logo from '../../images/90s.jpg';
 
 const Form = ({
   data,
@@ -89,7 +90,7 @@ const Form = ({
           <p className="error-message">* Este campo es obligatorio</p>
         )}
         <textarea
-          className={`input ${errors.desc ? "error" : ""} text-desc`}
+          className={`input ${errors.desc ? 'error' : ''} text-desc`}
           type="text"
           placeholder="  Descripción"
           name="desc"
@@ -100,7 +101,6 @@ const Form = ({
         {errors.desc && (
           <p className="error-message">* Este campo es obligatorio</p>
         )}
-        
       </fieldset>
 
       <section className="ask-info">
