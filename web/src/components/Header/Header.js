@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import Logo from "../../images/90s.jpg";
 
 const Header = () => {
   return (
     <header className="header">
       <Link to="/" className="text header__link">
-        <img className="img__logo" src="" alt="Logo" />
+        <img src={Logo} className="img__logo" alt="Logo" />
       </Link>
     </header>
   );
