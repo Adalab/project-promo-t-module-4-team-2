@@ -1,5 +1,7 @@
-/*body {
-    background: red;
+body {
+    background-image: url("../../web/src/images/main-bg.jpg");
+    background-size: cover;
+    
 }
 
 @media screen and (min-width: 768px) {
