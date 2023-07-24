@@ -72,7 +72,7 @@ server.post("/api/add", async (req, res) => {
   ]);
   console.log(resultProject);
   res.json({
-    succes: true,
+    success: true,
     cardURL: `http://localhost:4000/project/${resultProject.insertId}`,
   });
   connect.end();
