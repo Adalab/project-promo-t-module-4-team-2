@@ -6,7 +6,7 @@
 }
 
 .main {
-  min-height: 95vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -15,6 +15,7 @@
   align-items: center;
   background-image: url("../public/static/media/main-bg.jpg");
   background-size: cover;
+  background-color: rgb(209, 140, 209);
 }
 
 .preview {
