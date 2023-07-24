@@ -10,6 +10,7 @@ function Main({
   handleClickCreateCard,
   errorMessage,
   handleChangeForm,
+  showUrlButton,
 }) {
   return (
     <main className="main">
@@ -24,6 +25,11 @@ function Main({
         errorMessage={errorMessage}
         handleChangeForm={handleChangeForm}
       />
+      {showUrlButton && (
+        <a href={url} target="_blank" rel="noreferrer">
+          <button>Ver tarjeta</button>
+        </a>
+      )}
     </main>
   );
 }
