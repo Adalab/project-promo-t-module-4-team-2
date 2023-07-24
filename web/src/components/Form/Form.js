@@ -164,7 +164,7 @@ const Form = ({
               rel="noreferrer"
             >
               Click para verla
-              {url}
+            
             </a>
           </>
         )}
@@ -174,7 +174,7 @@ const Form = ({
               Error al crear la tarjeta. Por favor, revisa todos los campos.
             </p>
             <a href={url} className="errorMsg" target="_blank" rel="noreferrer">
-              {url}
+             
             </a>
           </>
         )}
