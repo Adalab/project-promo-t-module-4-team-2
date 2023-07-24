@@ -164,7 +164,7 @@ const Form = ({
               rel="noreferrer"
             >
               Click para verla
-              {/* {url} */}
+              {url}
             </a>
           </>
         )}

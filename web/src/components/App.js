@@ -46,6 +46,8 @@ function App() {
     autor: false,
     job: false,
   });
+  const [showUrlButton, setShowUrlButton] = useState(false);
+
 
   const handleChangeForm = (parame1, value) => {
     const clonedData = { ...data, [parame1]: value };
@@ -66,25 +68,29 @@ function App() {
     }));
   };
 
-  const handleClickCreateCard = (ev) => {
-    ev.preventDefault();
+const handleClickCreateCard = (ev) => {
+  ev.preventDefault();
+  const allFieldsFilled = Object.values(data).every((value) => value !== "");
 
-    if (createCard === "") {
-      setCreateCard("");
-    }
-
+  if (allFieldsFilled) {
+    setErrorMessage(false); 
     callToApi(data).then((data) => {
       if (data.success) {
         setSuccessMessage(true);
-        setErrorMessage(false);
         setUrl(data.cardURL);
+        setShowUrlButton(true); 
       } else {
         setSuccessMessage(false);
-        setErrorMessage(true);
-        setUrl(data.cardURL);
+        setShowUrlButton(false); 
       }
     });
-  };
+  } else {
+    setErrorMessage(true);
+    setShowUrlButton(false); 
+  }
+};
+
+
 
   useEffect(() => {
     ls.set("formData", data);
@@ -108,6 +114,7 @@ function App() {
                 handleClickCreateCard={handleClickCreateCard}
                 errorMessage={errorMessage}
                 handleChangeForm={handleChangeForm}
+                showUrlButton={showUrlButton}
               />
               <Footer />
             </>
